@@ -39,7 +39,7 @@ struct CryptoListView: View {
                 }
                 .accessibilityIdentifier("MyCryptoList")
                 .navigationBarTitleDisplayMode(.inline)
-                .navigationTitle("Cryptocurrencies")
+                .navigationTitle(LocalizedStringKey("crypListTitle"))
                 .padding(.top, scrollMargin)
                 .padding(.bottom, scrollMargin)
                 if viewModel.isLoading {

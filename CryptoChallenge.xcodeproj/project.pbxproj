@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		079DB3CD2B875F3800F8FB20 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079DB3CC2B875F3800F8FB20 /* APIConstants.swift */; };
+		079DB3CF2B87621E00F8FB20 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 079DB3CE2B87621E00F8FB20 /* Localizable.xcstrings */; };
 		8503F93B2B82586000C7F57B /* CryptoChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8503F93A2B82586000C7F57B /* CryptoChallengeApp.swift */; };
 		8503F93F2B82586200C7F57B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8503F93E2B82586200C7F57B /* Assets.xcassets */; };
 		8503F9422B82586200C7F57B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8503F9412B82586200C7F57B /* Preview Assets.xcassets */; };
@@ -77,6 +78,7 @@
 
 /* Begin PBXFileReference section */
 		079DB3CC2B875F3800F8FB20 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		079DB3CE2B87621E00F8FB20 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		8503F9372B82586000C7F57B /* CryptoChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8503F93A2B82586000C7F57B /* CryptoChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoChallengeApp.swift; sourceTree = "<group>"; };
 		8503F93E2B82586200C7F57B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				8503F9702B827C8100C7F57B /* Data */,
 				8503F9662B8278C000C7F57B /* Domain */,
 				8503F93A2B82586000C7F57B /* CryptoChallengeApp.swift */,
+				079DB3CE2B87621E00F8FB20 /* Localizable.xcstrings */,
 				8503F93E2B82586200C7F57B /* Assets.xcassets */,
 				8503F9402B82586200C7F57B /* Preview Content */,
 			);
@@ -499,6 +502,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 8503F92E2B82586000C7F57B;
 			productRefGroup = 8503F9382B82586000C7F57B /* Products */;
@@ -519,6 +523,7 @@
 			files = (
 				8503F9422B82586200C7F57B /* Preview Assets.xcassets in Resources */,
 				8503F93F2B82586200C7F57B /* Assets.xcassets in Resources */,
+				079DB3CF2B87621E00F8FB20 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

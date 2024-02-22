@@ -18,17 +18,12 @@ class APICryptoDataSource {
 extension APICryptoDataSource: ApiDataSourceType {
     func getCryptoList(page: Int) async -> Result<(cryptoList: [CryptoCurrency], paginationInfo: CryptoCurrencyPaginationInfo), HTTPClientError> {
                 
-        let queryParameters: [String : Any] = [
-            "limit" : "20",
-            "page" : page,
-            "tsym" : "EUR"
-        ]
-        
-        let endpoint = Endpoint(path: "data/top/totalvolfull",
+        let queryParameters = APIConstants.queryParameters(forPage: page)
+        let endpoint = Endpoint(path: APIConstants.Endpoints.topTotalVolumeFull,
                                 queryParameters: queryParameters,
                                 method: .get)
 
-        let result = await httpCLient.makeRequest(endpoint: endpoint, baseUrl: "https://min-api.cryptocompare.com/")
+        let result = await httpCLient.makeRequest(endpoint: endpoint, baseUrl: APIConstants.baseUrl)
         
         guard case .success(let data) = result else {
             return .failure(handleError(error: result.failureValue as? HTTPClientError))
@@ -49,7 +44,7 @@ extension APICryptoDataSource: ApiDataSourceType {
                 return CryptoCurrency(
                     id: data.coinInfo.id,
                     name: data.coinInfo.fullName,
-                    logoImage: "https://www.cryptocompare.com\(data.coinInfo.imageUrl)",
+                    logoImage: "\(APIConstants.cryptoOriginWeb)\(data.coinInfo.imageUrl)",
                     symbol: data.coinInfo.name,
                     value: eurDisplayInfo.price,
                     volume24h: eurDisplayInfo.volume24Hour

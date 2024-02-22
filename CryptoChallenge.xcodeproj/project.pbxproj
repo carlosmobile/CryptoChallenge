@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		079DB3CD2B875F3800F8FB20 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079DB3CC2B875F3800F8FB20 /* APIConstants.swift */; };
 		8503F93B2B82586000C7F57B /* CryptoChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8503F93A2B82586000C7F57B /* CryptoChallengeApp.swift */; };
 		8503F93F2B82586200C7F57B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8503F93E2B82586200C7F57B /* Assets.xcassets */; };
 		8503F9422B82586200C7F57B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8503F9412B82586200C7F57B /* Preview Assets.xcassets */; };
@@ -75,6 +76,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		079DB3CC2B875F3800F8FB20 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		8503F9372B82586000C7F57B /* CryptoChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8503F93A2B82586000C7F57B /* CryptoChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoChallengeApp.swift; sourceTree = "<group>"; };
 		8503F93E2B82586200C7F57B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -285,6 +287,7 @@
 				8503F9892B82964200C7F57B /* Endpoint.swift */,
 				8503F98C2B82966F00C7F57B /* HTTPCLient.swift */,
 				8503F98B2B82966F00C7F57B /* HTTPMethod.swift */,
+				079DB3CC2B875F3800F8FB20 /* APIConstants.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -542,6 +545,7 @@
 			files = (
 				8503F9952B82997700C7F57B /* URLSessionErrorResolver.swift in Sources */,
 				8503F9BD2B8535C300C7F57B /* LocalCryptoDataSource.swift in Sources */,
+				079DB3CD2B875F3800F8FB20 /* APIConstants.swift in Sources */,
 				8503F9B42B83E88600C7F57B /* CryptoDetailViewModel.swift in Sources */,
 				8503F9BB2B85356C00C7F57B /* LocalDataSourceType.swift in Sources */,
 				8503F9C22B85427B00C7F57B /* PersistenceController.swift in Sources */,
